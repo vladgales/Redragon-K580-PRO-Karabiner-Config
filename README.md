@@ -1,6 +1,6 @@
 # Redragon K580-PRO Karabiner Configuration
 
-DONT FORGET TO LET A STAR ! Thx ❤️ .\n
+DONT FORGET TO LET A STAR ! Thx ❤️ . <br>
 This repository contains a custom Karabiner-Elements configuration designed for the **Redragon K580-PRO** keyboard. It includes various key remaps and custom functionalities to enhance your workflow on macOS.
 
 ### Author: 
