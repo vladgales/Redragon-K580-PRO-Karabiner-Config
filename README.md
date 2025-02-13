@@ -60,16 +60,16 @@ Contributions are welcome! To contribute:
    ```bash
    git checkout -b feature-name
    ```
-3.Make your changes.
-4.Commit your changes:
+3. Make your changes.
+4. Commit your changes:
    ```bash
    git commit -m "Description of the changes"
    ```
-5.Push to the branch:
+5. Push to the branch:
    ```bash
    git push origin feature-name
    ```
-6.Open a pull request and describe what your contribution adds or fixes.
+6. Open a pull request and describe what your contribution adds or fixes.
 
 ## License
 © 2025 Adem Ben Amor '@dissojak'. All rights reserved.
