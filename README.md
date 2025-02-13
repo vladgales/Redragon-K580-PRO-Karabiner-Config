@@ -52,6 +52,25 @@ You can check the **`complex_modifications`** section for a full list of custom 
 - This configuration is designed for **Redragon K580-PRO** but should work with other Redragon keyboards or similar devices.
 - You can always customize the mappings by editing the `Redragon_K580_Pro.json` file to suit your needs.
 
+## Contribution:
+Contributions are welcome! To contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:  
+   ```bash
+   git checkout -b feature-name
+   ```
+3.Make your changes.
+4.Commit your changes:
+```bash
+git commit -m "Description of the changes"
+```
+5.Push to the branch:
+```bash
+git push origin feature-name
+```
+6.Open a pull request and describe what your contribution adds or fixes.
+
 ## License
 © 2025 Adem Ben Amor '@dissojak'. All rights reserved.
 
