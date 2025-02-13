@@ -16,7 +16,7 @@ Adem Ben Amor (@dissojak)
 ### Features:
 - Custom key mappings tailored for **Redragon K580-PRO** and similar keyboards.
 - Open New Terminal Tab at Folder with `Keypad Num Lock` (mapped to `Command + Shift + Option + Control + T`). !important : u need to custom it on keyboard shortcuts , services FIRST !
-- Map specific keys like `/` to `=`, `Shift + /` to `Shift + =`, and many more.
+- Map specific keys like `8` to `!`, `Shift + 1` to `Shift + §`, and many more.
 - Enhance productivity with key remapping for common macOS shortcuts.
 
 ## How to Use
@@ -36,7 +36,7 @@ Adem Ben Amor (@dissojak)
 ### Custom Key Mappings:
 This configuration remaps several keys to improve your workflow:
 
-- **Keypad Num Lock** is mapped to `Command + Shift + Option + Control + T` (open a new terminal tab).
+- **Keypad Num Lock** is mapped to `Command + Shift + Option + Control + T` (open a new terminal tab at folder). !!! make sure u configuer it on keyboard shortcuts to `Command + Shift + Option + Control + T` First 
 - **Backslash (\\)** → `Shift + Close Bracket (])`.
 - **Equal Sign (=)** → Slash (/), and **Shift + Equal Sign (+)** → Shift + Slash (?).
 - **Pause** → Puts Mac to sleep.
