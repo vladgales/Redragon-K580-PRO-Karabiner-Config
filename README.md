@@ -7,6 +7,8 @@ Adem Ben Amor (@dissojak)
 
 ### Tags: 
 - Keyboard Remapping
+- Redragon Keyboards
+- Windows keyboard ( might not work perfectly ) 
 - Redragon K580-PRO
 - macOS
 - Karabiner-Elements
