@@ -1,835 +1,431 @@
 {
-    "profiles": [
-        {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "Map backslash to shift + close_bracket",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "backslash" },
-                                "to": [
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map equal_sign to slash and shift + equal_sign to shift + slash",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "equal_sign" },
-                                "to": [{ "key_code": "slash" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": { "mandatory": ["shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "slash",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map Keypad Num Lock to Command + Shift + Option + Control + T",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "keypad_num_lock" },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": ["left_command", "left_shift", "left_option", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Pause to Put Mac to Sleep",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "pause" },
-                                "to": [{ "shell_command": "pmset displaysleepnow" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Print Screen to Command + Shift + 4",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "insert" },
-                                "to": [
-                                    {
-                                        "key_code": "4",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Print Screen to Command + Shift + 3",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "print_screen" },
-                                "to": [
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Keypad Period to Shift + Comma",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "keypad_period" },
-                                "to": [
-                                    {
-                                        "key_code": "comma",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Equal Sign to Option + Hyphen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen",
-                                        "modifiers": ["option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Hyphen to Option + Shift + Hyphen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + 0 to Grave Accent and Tilde",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [{ "key_code": "grave_accent_and_tilde" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + 3 to #",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "3",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "backslash",
-                                        "modifiers": ["shift", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Shift + Period to Option + 8",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "period",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change !",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "slash" },
-                                "to": [{ "key_code": "8" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change 6 to behave as underscore (-)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "6" },
-                                "to": [{ "key_code": "equal_sign" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap 8 to underscore (_) and equal sign (=) to exclamation mark (!)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "8" },
-                                "to": [
-                                    {
-                                        "key_code": "equal_sign",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "change option 6 to |",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "6",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "l",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option+shift+5 to have this '[' to option+5",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "5",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option + 4 to 5 with option",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "4",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option + 7 to `",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "7",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [{ "key_code": "backslash" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Shift + ! to §",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [{ "key_code": "6" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Open a terminal window with Command + Application keys",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "application",
-                                    "modifiers": { "mandatory": ["command"] }
-                                },
-                                "to": [{ "shell_command": "open -a Terminal ~" }],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
-            },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 20484,
-                        "vendor_id": 3141
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "right_control" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
+  "metadata": {
+    "author": "Adem Ben Amor",
+    "tags": ["dissojak", "keyboard remapping && functionalities ", "Redragon K580-PRO Karabiner configuration"],
+    "copyright": "© 2025 Adem Ben Amor '@dissojak'. All rights reserved."
+  },
+  "profiles": [
+    {
+      "description": "this configuration could work on any Redragon , or similar keyboard",
+      "name": "Redragon K580-PRO",
+      "selected": true,
+      "virtual_hid_keyboard": {
+        "keyboard_type_v2": "iso"
+      },
+      "complex_modifications": {
+        "rules": [
+          {
+            "description": "Map backslash (\\) to shift + close_bracket (])",
+            "manipulators": [
+              {
+                "from": { "key_code": "backslash" },
+                "to": [
+                  {
+                    "key_code": "close_bracket",
+                    "modifiers": ["shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map equal_sign (=) to slash (/) and shift + equal_sign (+) to shift + slash (?)",
+            "manipulators": [
+              {
+                "from": { "key_code": "equal_sign" },
+                "to": [{ "key_code": "slash" }],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "equal_sign",
+                  "modifiers": { "mandatory": ["shift"] }
+                },
+                "to": [
+                  {
+                    "key_code": "slash",
+                    "modifiers": ["shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Map Keypad Num Lock to Command + Shift + Option + Control + T",
+            "manipulators": [
+              {
+                "from": { "key_code": "keypad_num_lock" },
+                "to": [
+                  {
+                    "key_code": "t",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift",
+                      "left_option",
+                      "left_control"
                     ]
-                }
-            ],
-            "fn_function_keys": [
-                {
-                    "from": { "key_code": "f1" },
-                    "to": [{ "key_code": "f1" }]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap Pause key to put the Mac to sleep",
+            "manipulators": [
+              {
+                "from": { "key_code": "pause" },
+                "to": [{ "shell_command": "pmset displaysleepnow" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap Insert key to Command + Shift + 4 (screenshot selection)",
+            "manipulators": [
+              {
+                "from": { "key_code": "insert" },
+                "to": [
+                  {
+                    "key_code": "4",
+                    "modifiers": ["command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap Print Screen key to Command + Shift + 3 (full screenshot)",
+            "manipulators": [
+              {
+                "from": { "key_code": "print_screen" },
+                "to": [
+                  {
+                    "key_code": "3",
+                    "modifiers": ["command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Keypad Period (.) to Shift + Comma (<)",
+            "manipulators": [
+              {
+                "from": { "key_code": "keypad_period" },
+                "to": [
+                  {
+                    "key_code": "comma",
+                    "modifiers": ["shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + Equal Sign (=) to Option + Hyphen (-)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "equal_sign",
+                  "modifiers": { "mandatory": ["option"] }
                 },
-                {
-                    "from": { "key_code": "f2" },
-                    "to": [{ "key_code": "f2" }]
+                "to": [
+                  {
+                    "key_code": "hyphen",
+                    "modifiers": ["option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + Hyphen (-) to Option + Shift + Hyphen (_)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "hyphen",
+                  "modifiers": { "mandatory": ["option"] }
                 },
-                {
-                    "from": { "key_code": "f3" },
-                    "to": [{ "key_code": "f3" }]
+                "to": [
+                  {
+                    "key_code": "hyphen",
+                    "modifiers": ["option", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + 0 to Grave Accent and Tilde (`)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "0",
+                  "modifiers": { "mandatory": ["option"] }
                 },
-                {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "key_code": "f4" }]
+                "to": [{ "key_code": "grave_accent_and_tilde" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + 3 to #",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "3",
+                  "modifiers": { "mandatory": ["option"] }
                 },
-                {
-                    "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "5" }]
+                "to": [
+                  {
+                    "key_code": "backslash",
+                    "modifiers": ["shift", "option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + Shift + Period (.) to Option + 8",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "8",
+                  "modifiers": { "mandatory": ["option"] }
                 },
-                {
-                    "from": { "key_code": "f7" },
-                    "to": [{ "key_code": "f7" }]
+                "to": [
+                  {
+                    "key_code": "period",
+                    "modifiers": ["option", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Slash (/) to 8",
+            "manipulators": [
+              {
+                "from": { "key_code": "slash" },
+                "to": [{ "key_code": "8" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change 6 to behave as underscore (-)",
+            "manipulators": [
+              {
+                "from": { "key_code": "6" },
+                "to": [{ "key_code": "equal_sign" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Remap 8 to underscore (_) and equal sign (=) to exclamation mark (!)",
+            "manipulators": [
+              {
+                "from": { "key_code": "8" },
+                "to": [
+                  {
+                    "key_code": "equal_sign",
+                    "modifiers": ["shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + 6 to |",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "6",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["caps_lock"]
+                  }
                 },
-                {
-                    "from": { "key_code": "f8" },
-                    "to": [{ "key_code": "f8" }]
+                "to": [
+                  {
+                    "key_code": "l",
+                    "modifiers": ["option", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + Shift + 5 to [",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "5",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["caps_lock"]
+                  }
                 },
-                {
-                    "from": { "key_code": "f9" },
-                    "to": [{ "key_code": "f9" }]
+                "to": [
+                  {
+                    "key_code": "5",
+                    "modifiers": ["option", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + 4 to 5 with Option modifier",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "4",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["caps_lock"]
+                  }
                 },
-                {
-                    "from": { "key_code": "f10" },
-                    "to": [{ "key_code": "f10" }]
+                "to": [
+                  {
+                    "key_code": "5",
+                    "modifiers": ["option"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Option + 7 to Backslash (\\)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "7",
+                  "modifiers": {
+                    "mandatory": ["option"],
+                    "optional": ["caps_lock"]
+                  }
                 },
-                {
-                    "from": { "key_code": "f11" },
-                    "to": [{ "key_code": "f11" }]
+                "to": [{ "key_code": "backslash" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Shift + Slash (/) to 6",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "slash",
+                  "modifiers": {
+                    "mandatory": ["shift"],
+                    "optional": ["caps_lock"]
+                  }
                 },
-                {
-                    "from": { "key_code": "f12" },
-                    "to": [{ "key_code": "f12" }]
-                }
-            ],
-            "name": "my profile",
-            "selected": true,
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
-        },
+                "to": [{ "key_code": "6" }],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Open Terminal with Command + Application key",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "application",
+                  "modifiers": { "mandatory": ["command"] }
+                },
+                "to": [{ "shell_command": "open -a Terminal ~" }],
+                "type": "basic"
+              }
+            ]
+          }
+        ]
+      },
+      "devices": [
         {
-            "name": "New profile",
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
-        },
-        {
-            "complex_modifications": {
-                "rules": [
-                    {
-                        "description": "Map backslash to shift + close_bracket",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "backslash" },
-                                "to": [
-                                    {
-                                        "key_code": "close_bracket",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map equal_sign to slash and shift + equal_sign to shift + slash",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "equal_sign" },
-                                "to": [{ "key_code": "slash" }],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": { "mandatory": ["shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "slash",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Map Keypad Num Lock to Command + Shift + Option + Control + T",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "keypad_num_lock" },
-                                "to": [
-                                    {
-                                        "key_code": "t",
-                                        "modifiers": ["left_command", "left_shift", "left_option", "left_control"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Pause to Put Mac to Sleep",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "pause" },
-                                "to": [{ "shell_command": "pmset displaysleepnow" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Print Screen to Command + Shift + 4",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "insert" },
-                                "to": [
-                                    {
-                                        "key_code": "4",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap Print Screen to Command + Shift + 3",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "print_screen" },
-                                "to": [
-                                    {
-                                        "key_code": "3",
-                                        "modifiers": ["command", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Keypad Period to Shift + Comma",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "keypad_period" },
-                                "to": [
-                                    {
-                                        "key_code": "comma",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Equal Sign to Option + Hyphen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "equal_sign",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen",
-                                        "modifiers": ["option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Hyphen to Option + Shift + Hyphen",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "hyphen",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "hyphen",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + 0 to Grave Accent and Tilde",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "0",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [{ "key_code": "grave_accent_and_tilde" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + 3 to #",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "3",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "backslash",
-                                        "modifiers": ["shift", "option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Option + Shift + Period to Option + 8",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "8",
-                                    "modifiers": { "mandatory": ["option"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "period",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change !",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "slash" },
-                                "to": [{ "key_code": "8" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change 6 to behave as underscore (-)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "6" },
-                                "to": [{ "key_code": "equal_sign" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Remap 8 to underscore (_) and equal sign (=) to exclamation mark (!)",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "8" },
-                                "to": [
-                                    {
-                                        "key_code": "equal_sign",
-                                        "modifiers": ["shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "change option 6 to |",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "6",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "l",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option+shift+5 to have this '[' to option+5",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "5",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["option", "shift"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option + 4 to 5 with option",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "4",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "5",
-                                        "modifiers": ["option"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change option + 7 to `",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "7",
-                                    "modifiers": {
-                                        "mandatory": ["option"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [{ "key_code": "backslash" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Change Shift + ! to §",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "slash",
-                                    "modifiers": {
-                                        "mandatory": ["shift"],
-                                        "optional": ["caps_lock"]
-                                    }
-                                },
-                                "to": [{ "key_code": "6" }],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Open a terminal window with Command + Application keys",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "application",
-                                    "modifiers": { "mandatory": ["command"] }
-                                },
-                                "to": [{ "shell_command": "open -a Terminal ~" }],
-                                "type": "basic"
-                            }
-                        ]
-                    }
-                ]
+          "identifiers": {
+            "is_keyboard": true,
+            "product_id": 20484,
+            "vendor_id": 3141
+          },
+          "simple_modifications": [
+            {
+              "from": { "key_code": "left_command" },
+              "to": [{ "key_code": "left_control" }]
             },
-            "devices": [
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 20484,
-                        "vendor_id": 3141
-                    },
-                    "simple_modifications": [
-                        {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
-                        {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "key_code": "left_command" }]
-                        },
-                        {
-                            "from": { "key_code": "right_control" },
-                            "to": [{ "key_code": "right_command" }]
-                        }
-                    ]
-                }
-            ],
-            "fn_function_keys": [
-                {
-                    "from": { "key_code": "f1" },
-                    "to": [{ "key_code": "f1" }]
-                },
-                {
-                    "from": { "key_code": "f2" },
-                    "to": [{ "key_code": "f2" }]
-                },
-                {
-                    "from": { "key_code": "f3" },
-                    "to": [{ "key_code": "f3" }]
-                },
-                {
-                    "from": { "key_code": "f4" },
-                    "to": [{ "key_code": "f4" }]
-                },
-                {
-                    "from": { "key_code": "f5" },
-                    "to": [{ "key_code": "5" }]
-                },
-                {
-                    "from": { "key_code": "f7" },
-                    "to": [{ "key_code": "f7" }]
-                },
-                {
-                    "from": { "key_code": "f8" },
-                    "to": [{ "key_code": "f8" }]
-                },
-                {
-                    "from": { "key_code": "f9" },
-                    "to": [{ "key_code": "f9" }]
-                },
-                {
-                    "from": { "key_code": "f10" },
-                    "to": [{ "key_code": "f10" }]
-                },
-                {
-                    "from": { "key_code": "f11" },
-                    "to": [{ "key_code": "f11" }]
-                },
-                {
-                    "from": { "key_code": "f12" },
-                    "to": [{ "key_code": "f12" }]
-                }
-            ],
-            "name": "my profile (copy)",
-            "virtual_hid_keyboard": { "keyboard_type_v2": "iso" }
+            {
+              "from": { "key_code": "left_control" },
+              "to": [{ "key_code": "left_command" }]
+            },
+            {
+              "from": { "key_code": "right_control" },
+              "to": [{ "key_code": "right_command" }]
+            }
+          ]
         }
-    ]
+      ],
+      "fn_function_keys": [
+        {
+          "from": { "key_code": "f1" },
+          "to": [{ "key_code": "f1" }]
+        },
+        {
+          "from": { "key_code": "f2" },
+          "to": [{ "key_code": "f2" }]
+        },
+        {
+          "from": { "key_code": "f3" },
+          "to": [{ "key_code": "f3" }]
+        },
+        {
+          "from": { "key_code": "f4" },
+          "to": [{ "key_code": "f4" }]
+        },
+        {
+          "from": { "key_code": "f5" },
+          "to": [{ "key_code": "5" }]
+        },
+        {
+          "from": { "key_code": "f7" },
+          "to": [{ "key_code": "f7" }]
+        },
+        {
+          "from": { "key_code": "f8" },
+          "to": [{ "key_code": "f8" }]
+        },
+        {
+          "from": { "key_code": "f9" },
+          "to": [{ "key_code": "f9" }]
+        },
+        {
+          "from": { "key_code": "f10" },
+          "to": [{ "key_code": "f10" }]
+        },
+        {
+          "from": { "key_code": "f11" },
+          "to": [{ "key_code": "f11" }]
+        },
+        {
+          "from": { "key_code": "f12" },
+          "to": [{ "key_code": "f12" }]
+        }
+      ]
+    }
+  ]
 }
