@@ -77,4 +77,4 @@ Contributions are welcome! To contribute:
 This project is licensed under the MIT License.
 
 ## Acknowledgments:
-- Special thanks to the Karabiner-Elements project for making macOS keyboard customization easy and powerful.
+- Special thanks to the `Karabiner-Elements` project for making macOS keyboard customization easy and powerful.
