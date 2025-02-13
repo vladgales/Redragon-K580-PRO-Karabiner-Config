@@ -15,7 +15,7 @@ Adem Ben Amor (@dissojak)
 
 ### Features:
 - Custom key mappings tailored for **Redragon K580-PRO** and similar keyboards.
-- Open Terminal with `Keypad Num Lock` (mapped to `Command + Shift + Option + Control + T`).
+- Open Terminal with `Keypad Num Lock` (mapped to `Command + Shift + Option + Control + T`). !important : u need to custom it on keyboard shortcuts , services FIRST !
 - Map specific keys like `/` to `=`, `Shift + /` to `Shift + =`, and many more.
 - Enhance productivity with key remapping for common macOS shortcuts.
 
