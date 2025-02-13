@@ -62,13 +62,13 @@ Contributions are welcome! To contribute:
    ```
 3.Make your changes.
 4.Commit your changes:
-```bash
-git commit -m "Description of the changes"
-```
+   ```bash
+   git commit -m "Description of the changes"
+   ```
 5.Push to the branch:
-```bash
-git push origin feature-name
-```
+   ```bash
+   git push origin feature-name
+   ```
 6.Open a pull request and describe what your contribution adds or fixes.
 
 ## License
